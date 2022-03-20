@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 832px;
+    width: 832px;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    border: .05px solid black;
+}
