@@ -1,5 +1,9 @@
 body {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
 }
 
 .container {
@@ -8,10 +12,20 @@ body {
     height: 500px;
     width: 500px;
     margin-left: 10px;
+    margin-top: 20px;
     flex-shrink: 0;
+    border: 1px solid black;
 }
 
 .box { 
     box-shadow: inset 0px 0px 0px 1px black;
     background-color: lightgrey;
     box-sizing: border-box;
+}
+
+.reset {
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    font-size: small;
+}
