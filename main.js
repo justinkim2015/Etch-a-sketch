@@ -1,5 +1,4 @@
-let gridSize = 16;
-let grid = (gridSize * gridSize);
+let gridSize = 24;
 let percent = 100 / gridSize;
 let randomColor = Math.floor(Math.random()*16777215).toString(16);
 
@@ -11,15 +10,16 @@ const container = document.querySelector('.container');
 //   console.log(gridSize);
 // });
 
-makeGrid();
+makeGrid(gridSize);
+
 
 resetButton.addEventListener('click', function() {
   gridSize = prompt('?');
   box.forEach(box => box.style.backgroundColor = 'lightgrey');
 });
 
-function makeGrid() {
-for (let i=0; i < (grid); i++) {
+function makeGrid(size) {
+for (let i=0; i < (size * size); i++) {
     if (gridSize <= 100) {
       const box = document.createElement('div');
       box.classList.add('box');
